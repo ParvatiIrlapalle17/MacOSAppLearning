@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181C42EA2D201C780059A959 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C42E92D201C780059A959 /* MyList.swift */; };
+		181C42ED2D2020FD0059A959 /* AddNewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C42EC2D2020FD0059A959 /* AddNewListViewModel.swift */; };
+		181C42EF2D20226C0059A959 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C42EE2D20226C0059A959 /* BaseModel.swift */; };
 		18CD59ED2D2016B7004FA04B /* MacLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD59EC2D2016B7004FA04B /* MacLearnApp.swift */; };
 		18CD59EF2D2016B7004FA04B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD59EE2D2016B7004FA04B /* ContentView.swift */; };
 		18CD59F12D2016B9004FA04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CD59F02D2016B9004FA04B /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181C42E92D201C780059A959 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
+		181C42EC2D2020FD0059A959 /* AddNewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListViewModel.swift; sourceTree = "<group>"; };
+		181C42EE2D20226C0059A959 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		18CD59E92D2016B7004FA04B /* MacLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CD59EC2D2016B7004FA04B /* MacLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLearnApp.swift; sourceTree = "<group>"; };
 		18CD59EE2D2016B7004FA04B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181C42E82D201C630059A959 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				181C42E92D201C780059A959 /* MyList.swift */,
+				181C42EE2D20226C0059A959 /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		181C42EB2D2020DD0059A959 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				181C42EC2D2020FD0059A959 /* AddNewListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		18CD59E02D2016B7004FA04B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +128,8 @@
 		18CD59EB2D2016B7004FA04B /* MacLearn */ = {
 			isa = PBXGroup;
 			children = (
+				181C42EB2D2020DD0059A959 /* View Models */,
+				181C42E82D201C630059A959 /* Model */,
 				18CD5A222D201756004FA04B /* MainView */,
 				18CD5A1D2D2016DD004FA04B /* Side Menu */,
 				18CD5A1C2D2016D2004FA04B /* HomeView */,
@@ -302,8 +327,11 @@
 				18CD5A242D201764004FA04B /* MainView.swift in Sources */,
 				18CD59F92D2016B9004FA04B /* MacLearn.xcdatamodeld in Sources */,
 				18CD59F62D2016B9004FA04B /* Persistence.swift in Sources */,
+				181C42EF2D20226C0059A959 /* BaseModel.swift in Sources */,
+				181C42ED2D2020FD0059A959 /* AddNewListViewModel.swift in Sources */,
 				18CD5A212D201732004FA04B /* HomeView.swift in Sources */,
 				18CD59EF2D2016B7004FA04B /* ContentView.swift in Sources */,
+				181C42EA2D201C780059A959 /* MyList.swift in Sources */,
 				18CD59ED2D2016B7004FA04B /* MacLearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,10 +493,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MacLearn/MacLearn.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacLearn/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -479,6 +510,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.MacLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -490,10 +522,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MacLearn/MacLearn.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacLearn/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -504,6 +539,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.MacLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

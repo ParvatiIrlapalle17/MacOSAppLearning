@@ -1,9 +1,3 @@
-//
-//  Persistence.swift
-//  MacLearn
-//
-//  Created by Apple on 28/12/24.
-//
 
 import CoreData
 
